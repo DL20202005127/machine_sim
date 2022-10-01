@@ -1,4 +1,4 @@
-def asm_pio(*args, **kwargs):
+def asm_pio(*args, **kwargs):#se crea un clase para decorar
     def decorador(programa):
         def compilador():
             print("Parámetros", kwargs) 
