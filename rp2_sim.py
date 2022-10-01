@@ -23,7 +23,7 @@ class StateMachine:
   def __init__(self, id_, program, freq=125000000, **kwargs):
         global sm_iniciandose,fsms
         sm_iniciandose=self
-        #print('StateMachine.__init__',id_, program, freq, kwargs)
+        #print('StateMachine.__init__',id_, program, freq, kwargs)#la maquina tatatatata
         self.lista_instr=[]
         program()
         print('Fueron leidas',len(self.lista_instr), 'instrucciones')
