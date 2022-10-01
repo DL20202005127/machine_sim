@@ -1,4 +1,4 @@
-def asm_pio(*args, **kwargs):#se crea un clase para decorar
+def asm_pio(*args, **kwargs):
     def decorador(programa):
         def compilador():
             print("Parámetros", kwargs) 
@@ -20,10 +20,10 @@ class PIO():
     
 
 class StateMachine:
-  def __init__(self, id_, program, freq=125000000, **kwargs):
+  def __init__(self, id_, program, freq=125000000, **kwargs):# se crea la funcion inicial con parametros de (FSM inicial,identificador, un programa, los parametros del programa, argumento variable)
         global sm_iniciandose,fsms
         sm_iniciandose=self
-        #print('StateMachine.__init__',id_, program, freq, kwargs)#la maquina tatatatata
+        #print('StateMachine.__init__',id_, program, freq, kwargs)
         self.lista_instr=[]
         program()
         print('Fueron leidas',len(self.lista_instr), 'instrucciones')
