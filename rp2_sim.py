@@ -20,7 +20,7 @@ class PIO():
     
 
 class StateMachine:
-  def __init__(self, id_, program, freq=125000000, **kwargs):# se crea la funcion inicial con parametros de (FSM inicial,identificador, un programa, los parametros del programa, argumento variable)
+  def __init__(self, id_, program, freq=125000000, **kwargs):
         global sm_iniciandose,fsms
         sm_iniciandose=self
         #print('StateMachine.__init__',id_, program, freq, kwargs)
@@ -30,7 +30,7 @@ class StateMachine:
         sm_iniciandose=None
         fsms[id_]=self
         pass
-      
+# existe una pagina que sirve para simular una raspberry pi pico (https://wokwi.com), en la que se puede programar en phyton tambien
         
   def active(self, x=None):
     '''Esta rutina simula exclisivamnte esa FSM. Sería interesante crear simulación en parlelo con otras FSM'''
